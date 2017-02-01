@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <h1>Profile</h1>
+    <hr>
+    <img src="{{ url_for('static',filename='profilePic.jpg') }}" style="display:inline; float:left; border:7px solid grey; border-radius:5px; width:40%;height:300px;">
+    <table style="border:5px solid grey; border-radius:5px; float:left; margin-left:50px; width:50%;">
+        <tr>
+            <th style="background-color: grey">I am Robot</th>
+        </tr>
+        <tr>
+            <td>
+                </br>
+                Today's date is {{ date }}
+                </br><hr>
+                <b>Username:</b> iRobot
+                </br>
+                <b>Id Number:</b> 620077449
+                </br>
+                <b>Age:</b> 120
+                </br>
+                <b>Gender:</b> does not compute
+                </br><hr>
+                I want to be a real boy.
+                </br>
+            </td>
+        </tr>
+    </table>
+{% endblock %}
