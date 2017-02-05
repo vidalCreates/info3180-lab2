@@ -4,25 +4,23 @@
     <h1>Profile</h1>
     <hr>
     <img src="{{ url_for('static',filename='profilePic.jpg') }}" style="display:inline; float:left; border:7px solid grey; border-radius:5px; width:40%;height:300px;">
-    <table style="border:5px solid grey; border-radius:5px; float:left; margin-left:50px; width:50%;">
+    <table style="border-collapse: separate; border:5px solid gray; border-radius:5px; float:left; margin-left:50px; width:55%; min-height:350px;">
         <tr>
-            <th style="background-color: grey">I am Robot</th>
+            <th style="background-color: grey;padding-left:20px;">I am Robot</th>
         </tr>
         <tr>
-            <td>
-                </br>
+            <td style="padding-left:20px;">
                 Today's date is {{ date }}
                 </br><hr>
                 <b>Username:</b> iRobot
                 </br>
                 <b>Id Number:</b> 620077449
                 </br>
-                <b>Age:</b> 120
+                <b>Age:</b> 21
                 </br>
                 <b>Gender:</b> does not compute
                 </br><hr>
                 I want to be a real boy.
-                </br>
             </td>
         </tr>
     </table>

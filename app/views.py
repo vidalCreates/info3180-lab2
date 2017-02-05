@@ -31,7 +31,7 @@ def profile():
     return render_template('profile.html',date=timeinfo())
 
 def timeinfo():
-    return time.strftime("%x")
+    return time.strftime("%a, %b %d %Y")
 
 ###
 # The functions below should be applicable to all Flask apps.
